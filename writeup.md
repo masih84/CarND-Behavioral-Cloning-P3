@@ -147,7 +147,8 @@ I used [video.py](https://github.com/masih84/CarND-Behavioral-Cloning-P3/blob/ma
 
 
 ## Discussion
-This project was a great practice to see how the image processing can be used for lane identifications. The moving averaging technique has a big impact on smoothing my result. Identifying outlier result and resting my code using sliding windows was very effective to avoid any jumps and non-sense lanes.
+This project was a great practice and very exciting project to actually implement what we learned Deep learning for the self-driving car. The training was very important and having multiple laps for training and drive in both direction allows the network to learn how to steer in both tracks.  
 
 ### Problems/Issues faced
-I am quite new to Python, so most of my time was spend on developing python code and reading different library to learn how various functions of `numpy` or `Moviepy` works. I tried to process tha challenges video and found few issues to improve but ran out of time.
+I wanted to run this code on my local Windows 10 machine. I found running with GPU is prerequisite for this project and tried to install TensorFlow GPU by following this [instructions](https://www.quantinsti.com/blog/install-tensorflow-gpu). Initially, I installed Cuda version 10 but it did not work and I got [DLL load failed] error.  After doing more search, I found from [here](https://github.com/tensorflow/tensorflow/issues/22794) that I should install Cuda 9.0 instead of Cuda 10 with tensorflow1.12.0 and cudnn 7.4.1.5.
+
