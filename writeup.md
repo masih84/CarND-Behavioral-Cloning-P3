@@ -1,10 +1,12 @@
 # **Behavioral Cloning** 
 
-## Writeup Template
-
 ---
 
 **Behavioral Cloning Project**
+
+In the fourth project of Udacity Autonomous nano programs, Behavioral Cloning, I practiced training and implementation of the convolutional neural network using [Keras](https://keras.io/) to control the steering angle as car drive around the track using self driving car [simulator](https://github.com/udacity/self-driving-car-sim) in [Unity](https://unity3d.com/).
+
+![Sample Autonomous Driving Results](https://raw.githubusercontent.com/masih84/CarND-Behavioral-Cloning-P3/master/track2.gif)
 
 The goals / steps of this project are the following:
 * Use the simulator to collect data of good driving behavior
@@ -13,6 +15,7 @@ The goals / steps of this project are the following:
 * Test that the model successfully drives around track one without leaving the road
 * Summarize the results with a written report
 
+A Python code was developed on github [Full Project Repo](https://github.com/masih84/CarND-Behavioral-Cloning-P3) - [model.py](https://github.com/masih84/CarND-Behavioral-Cloning-P3/blob/master/model.py). The project is written in python and its utilises such as [numpy](http://www.numpy.org/) and [OpenCV](http://opencv.org/), [Keras](https://keras.io/) and [Tensorflow](https://www.tensorflow.org/).
 
 [//]: # (Image References)
 
