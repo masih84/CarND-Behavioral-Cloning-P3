@@ -145,12 +145,12 @@ After the collection process, I had 85632 number of data points. I used Generato
 
 I finally randomly shuffled the data set and put 20% of the data into a validation set. 
 
-I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 5 as evidenced by trail and error. I used an adam optimizer so that manually training the learning rate wasn't necessary.
+I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 5 as evidenced by trail and error. I used an Adam optimizer so that manually training the learning rate wasn't necessary. Here is the plot of Model Mean Square Error for both Training and validation sets. Since the loss was decreasing for both validation and training sets, the model was not over-fitted.
 
 ![alt text][image10]
 
 ## Result Video
-The trained Model is successfully driving around both track 1 and 2 without going out os the track. I increased speed and it could drive as fast as 20 MPH without any issues on both tracks. I used [video.py](https://github.com/masih84/CarND-Behavioral-Cloning-P3/blob/master/video.py) to generate the project video for both tracks. The [Track one](https://raw.githubusercontent.com/masih84/CarND-Behavioral-Cloning-P3/master/Track1.mp4), and [Track two](https://raw.githubusercontent.com/masih84/CarND-Behavioral-Cloning-P3/master/Track2.mp4) are captured car motion in Autonomous mode from the center camera. I noticed saving the image with video.py slow down my GPU/CPU and affect the car smooth motion. So, I recorded the simulation using [ezvid](https://www.ezvid.com/) and could drive as fast as 20 MPH on  both tracks. Here are Youtube Links: 
+The trained Model is successfully driving around both track 1 and 2 without going out os the track. I increased the car speed in [drive.py] and CNN control the steering angle without any issues up to 20 MPH on both tracks. I used [video.py](https://github.com/masih84/CarND-Behavioral-Cloning-P3/blob/master/video.py) to generate the project video for both tracks. The [Track one](https://raw.githubusercontent.com/masih84/CarND-Behavioral-Cloning-P3/master/Track1.mp4), and [Track two](https://raw.githubusercontent.com/masih84/CarND-Behavioral-Cloning-P3/master/Track2.mp4) are captured car motion in Autonomous mode from the center camera. I noticed saving the image with video.py slow down my GPU/CPU and affect the car smooth motion. So, I recorded the simulation using [ezvid](https://www.ezvid.com/) and could drive as fast as 20 MPH on  both tracks. Here are Youtube Links: 
 * [YouTube Link](https://youtu.be/G8SF40JCmks) Autonomous driving results Track one
 * [YouTube Link](https://youtu.be/RC2NaYsrmMM) Autonomous driving results Track two
 
