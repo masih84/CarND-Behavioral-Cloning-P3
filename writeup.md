@@ -4,7 +4,7 @@
 
 **Behavioral Cloning Project**
 
-In the fourth project of Udacity Autonomous nano programs, Behavioral Cloning, I practiced training and implementation of the convolutional neural network using [Keras](https://keras.io/) to control the steering angle as car drive around the track using self driving car [simulator](https://github.com/udacity/self-driving-car-sim) in [Unity](https://unity3d.com/).
+In the fourth project of Udacity Autonomous nano programs, Behavioral Cloning, I practiced training and implementation of the convolutional neural network with [NVIDIA](http://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf) structure using [Keras](https://keras.io/) to train a car driving in the center of the road when it travles around different roads in  self driving car [simulator](https://github.com/udacity/self-driving-car-sim) in [Unity](https://unity3d.com/).
 
 ![Sample Autonomous Driving Results](https://raw.githubusercontent.com/masih84/CarND-Behavioral-Cloning-P3/master/track2.gif)
 
