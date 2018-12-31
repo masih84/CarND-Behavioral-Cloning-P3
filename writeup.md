@@ -55,6 +55,9 @@ The model.py file contains the code for training and saving the convolution neur
 
 #### 1. An appropriate model architecture has been employed
 
+I implimented the Network used in [NVIDIA paper](http://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf). This network architecture is shown in Figure 4.  The network consists of 9 layers, including a normalization layer, 5 convolutional layers
+and 3 fully connected layers. The input image is split into YUV planes and passed to the network.
+
 My model consists of a convolution neural network with 3x3 filter sizes and depths between 32 and 128 (model.py lines 18-24) 
 
 The model includes RELU layers to introduce nonlinearity (code line 20), and the data is normalized in the model using a Keras lambda layer (code line 18). 
