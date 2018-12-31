@@ -31,7 +31,6 @@ A Python code was developed on github [Full Project Repo](https://github.com/mas
 [image10]: ./sample_images/model_mse.PNG "model MSE Image"
 
 
-
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
 
@@ -159,5 +158,5 @@ I used [video.py](https://github.com/masih84/CarND-Behavioral-Cloning-P3/blob/ma
 This project was a great practice and very exciting project to actually implement what we learned Deep learning for the self-driving car. The training was very important and having multiple laps for training and drive in both direction allows the network to learn how to steer in both tracks. Learning the importance of Tenseflow with GPU and using the generator to use limited memory was other handy techniques I learned in this project.
 
 ### Problems/Issues faced
-The step by step instruction in the project was very helpful to learn how to do this project. The only challenge I faced was regarding installation of TensorFlow GPU on my Machine. I following this [instructions](https://www.quantinsti.com/blog/install-tensorflow-gpu) to install Tenserflow with Cuda version 10 but it did not work and I had [DLL load failed] error. After doing more search, I found from [here](https://github.com/tensorflow/tensorflow/issues/22794) that I should install Cuda 9.0 instead of Cuda 10 with tensorflow1.12.0 and cudnn 7.4.1.5.
+The step by step instruction in the project descriptions was very helpful to learn how to do this project. The only challenge I faced was regarding installation of TensorFlow GPU on my Laptop. I followed this [instructions](https://www.quantinsti.com/blog/install-tensorflow-gpu) to install Tenserflow with Cuda version 10 but it did not work and I had this [DLL load failed] error. After some more research, I found from [here](https://github.com/tensorflow/tensorflow/issues/22794) that I should install Cuda 9.0 instead of Cuda 10 with tensorflow1.12.0 and cudnn 7.4.1.5.
 
