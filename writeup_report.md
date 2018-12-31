@@ -44,8 +44,8 @@ My project includes the following files:
 * [drive.py](https://github.com/masih84/CarND-Behavioral-Cloning-P3/blob/master/drive.py) for driving the car in autonomous mode
 * [model.h5](https://github.com/masih84/CarND-Behavioral-Cloning-P3/blob/master/model.h5) containing a trained convolution neural network 
 * [writeup_report.md](https://github.com/masih84/CarND-Behavioral-Cloning-P3/edit/master/writeup_report.md) summarizing the results
-* [Track_1.mp4](https://github.com/masih84/CarND-Behavioral-Cloning-P3/edit/master/writeup_report.md) self-driving result Track 1
-* [Track_2.mp4](https://github.com/masih84/CarND-Behavioral-Cloning-P3/edit/master/writeup_report.md) self-driving result Track 2
+* [Track1.mp4](https://raw.githubusercontent.com/masih84/CarND-Behavioral-Cloning-P3/master/Track1.mp4) self-driving result Track 1
+* [Track2.mp4](https://raw.githubusercontent.com/masih84/CarND-Behavioral-Cloning-P3/master/Track2.mp4) self-driving result Track 2
 
 
 #### 2. Submission includes functional code
@@ -151,7 +151,7 @@ I used this training data for training the model. The validation set helped dete
 
 ## Result Video
 
-I used [video.py](https://github.com/masih84/CarND-Behavioral-Cloning-P3/blob/master/video.py) to generate the project video for track 1 and 2.  The [Track one](https://raw.githubusercontent.com/masih84/CarND-Behavioral-Cloning-P3/master/run2.mp4), and [Track two](https://raw.githubusercontent.com/masih84/CarND-Behavioral-Cloning-P3/master/run1.mp4) are captured car motion in Autonomous mode from the center camera. I also recorded the simulation when running one and two and post them on Youtube. [Track one YouTube Link](https://youtu.be/G8SF40JCmks) and [Track two YouTube Link](https://youtu.be/RC2NaYsrmMM)
+I used [video.py](https://github.com/masih84/CarND-Behavioral-Cloning-P3/blob/master/video.py) to generate the project video for track 1 and 2.  The [Track one](https://raw.githubusercontent.com/masih84/CarND-Behavioral-Cloning-P3/master/Track1.mp4), and [Track two](https://raw.githubusercontent.com/masih84/CarND-Behavioral-Cloning-P3/master/Track2.mp4) are captured car motion in Autonomous mode from the center camera. I also recorded the simulation when running one and two and post them on Youtube. [Track one YouTube Link](https://youtu.be/G8SF40JCmks) and [Track two YouTube Link](https://youtu.be/RC2NaYsrmMM)
 
 ![alt text][image8]
 
