@@ -26,8 +26,10 @@ A Python code was developed on github [Full Project Repo](https://github.com/mas
 [image5]: ./sample_images/Right2.png "Recovery Image"
 [image6]: ./sample_images/Center2.png "Normal Image"
 [image7]: ./sample_images/Center-flipped.png "Flipped Image"
-[image8]: ./sample_images/1rack1.png "Track 1 Image"
-[image9]: ./sample_images/trakc_2.png "Track 2 Image"
+[image8]: ./sample_images/track1.png "Track 1 Image"
+[image9]: ./sample_images/track_2.png "Track 2 Image"
+[image10]: ./sample_images/model_mse.PNG "model MSE Image"
+
 
 
 ## Rubric Points
@@ -142,6 +144,9 @@ After the collection process, I had 85632 number of data points. I used Generato
 I finally randomly shuffled the data set and put 20% of the data into a validation set. 
 
 I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 5 as evidenced by trail and error. I used an adam optimizer so that manually training the learning rate wasn't necessary.
+
+![alt text][image10]
+
 ## Result Video
 
 I used [video.py](https://github.com/masih84/CarND-Behavioral-Cloning-P3/blob/master/video.py) to generate the project video for track 1 and 2.  The [Track one](https://raw.githubusercontent.com/masih84/CarND-Behavioral-Cloning-P3/master/run2.mp4), and [Track two](https://raw.githubusercontent.com/masih84/CarND-Behavioral-Cloning-P3/master/run1.mp4) are captured car motion in Autonomous mode from the center camera. I also recorded the simulation when running one and two and post them on Youtube. [Track one YouTube Link](https://youtu.be/G8SF40JCmks) and [Track two YouTube Link](https://youtu.be/RC2NaYsrmMM)
