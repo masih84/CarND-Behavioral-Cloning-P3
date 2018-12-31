@@ -141,3 +141,13 @@ After the collection process, I had X number of data points. I then preprocessed
 I finally randomly shuffled the data set and put Y% of the data into a validation set. 
 
 I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was Z as evidenced by ... I used an adam optimizer so that manually training the learning rate wasn't necessary.
+## Result Video
+
+I used [video.py](https://github.com/masih84/CarND-Behavioral-Cloning-P3/blob/master/video.py) to generate the project video for track 1 and 2.  The [Track one](https://raw.githubusercontent.com/masih84/CarND-Behavioral-Cloning-P3/master/run2.mp4), and [Track two](https://raw.githubusercontent.com/masih84/CarND-Behavioral-Cloning-P3/master/run1.mp4) are captured car motion in Autonomous mode from the center camera. I also recorded the simulation when running one and two and post them on Youtube. [Track one YouTube Link](https://youtu.be/G8SF40JCmks) and [Track two YouTube Link](https://youtu.be/RC2NaYsrmMM)
+
+
+## Discussion
+This project was a great practice to see how the image processing can be used for lane identifications. The moving averaging technique has a big impact on smoothing my result. Identifying outlier result and resting my code using sliding windows was very effective to avoid any jumps and non-sense lanes.
+
+### Problems/Issues faced
+I am quite new to Python, so most of my time was spend on developing python code and reading different library to learn how various functions of `numpy` or `Moviepy` works. I tried to process tha challenges video and found few issues to improve but ran out of time.
