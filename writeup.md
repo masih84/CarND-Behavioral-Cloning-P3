@@ -91,33 +91,23 @@ At the end of the process, the vehicle is able to drive autonomously around the 
 
 The final model architecture (model.py lines 108-152) consisted of nine-layesr neural network with the following layers and layer sizes:
 
-My final model consisted of the following layers:
 
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | Input         		| 160x320x3 RGB image   							| 
 | Nomalization         		| 160x320x3   							| 
 | Cropping         		| 65x320x3    							| 
-| Convolution 5x5     	| 2x2 stride, valid padding, outputs 31x158x24 	|
-| RELU					|										
-| Convolution 5x5     	| 2x2 stride, valid padding, outputs 14x77x36 	|
-|| RELU					|										
-| Convolution 5x5     	| 1x1 stride, valid padding, outputs 10x73x48 	|
-| RELU					|										
-| Convolution 3x3     	| 1x1 stride, valid padding, outputs 8x71x64 	|
-| RELU					|										
-| Convolution 3x3     	| 2x2 stride, valid padding, outputs 6x69x64 	|
-| RELU					|										
-| Convolution 5x5     	| 2x2 stride, valid padding, outputs 6x69x64 	|
-| RELU					|										
+| Convolution 5x5     	| 2x2 stride, valid padding, activation=RELU, outputs 31x158x24 	|
+| Convolution 5x5     	| 2x2 stride, valid padding, activation=RELU, outputs 14x77x36 	|
+| Convolution 5x5     	| 2x2 stride, valid padding, activation=RELU, activation=RELU, outputs 10x73x48 	|
+| Convolution 3x3     	| 1x1 stride, valid padding, activation=RELU, outputs 8x71x64 	|
+| Convolution 3x3     	| 1x1 stride, valid padding, activation=RELU, outputs 6x69x64 	|
 | Flatten	      	| outputs 26496 				|
 | Fully connected	1	| outputs 100  		        									|
 | Fully connected	2	| outputs 50  		        									|
 | Fully connected	2	| outputs 1  		        									|
 |	reduce_mean					|			mse									|
 |	optimizer					|				AdamOptimizer								|
- 
-
 
 
 Here is a visualization of the architecture (note: visualizing the architecture is optional according to the project rubric)
