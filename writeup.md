@@ -99,7 +99,7 @@ The final model architecture (model.py lines 108-152) consisted of nine-layesr n
 | Cropping         		| 65x320x3    							| 
 | Convolution 5x5     	| 2x2 stride, valid padding, activation=RELU, outputs 31x158x24 	|
 | Convolution 5x5     	| 2x2 stride, valid padding, activation=RELU, outputs 14x77x36 	|
-| Convolution 5x5     	| 2x2 stride, valid padding, activation=RELU, activation=RELU, outputs 10x73x48 	|
+| Convolution 5x5     	| 2x2 stride, valid padding, activation=RELU, outputs 10x73x48 	|
 | Convolution 3x3     	| 1x1 stride, valid padding, activation=RELU, outputs 8x71x64 	|
 | Convolution 3x3     	| 1x1 stride, valid padding, activation=RELU, outputs 6x69x64 	|
 | Flatten	      	| outputs 26496 				|
