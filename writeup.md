@@ -56,8 +56,6 @@ The model.py file contains the code for training and saving the convolution neur
 #### 1. An appropriate model architecture has been employed
 I implemented the Neural Network structure used in [NVIDIA paper](http://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf) for driving an actual car. This network architecture is shown in Figure 1 consists of 9 layers, including a normalization and cropping layer, 5 convolutional layers and 3 fully connected layers. The input image is normalized and cropped and passed to the network. The model includes RELU layers to introduce nonlinearity (code lines 120 to 136), and the data is normalized in the model using a Keras lambda layer (code line 113).
 
-![alt text][image1]
-
 
 #### 2. Attempts to reduce overfitting in the model
 
@@ -92,6 +90,33 @@ At the end of the process, the vehicle is able to drive autonomously around the 
 #### 2. Final Model Architecture
 
 The final model architecture (model.py lines 108-152) consisted of nine-layesr neural network with the following layers and layer sizes:
+
+My final model consisted of the following layers:
+
+| Layer         		|     Description	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| Input         		| 160x320x3 RGB image   							| 
+| Nomalization         		| 160x320x3   							| 
+| Cropping         		| 65x320x3    							| 
+| Convolution 5x5     	| 2x2 stride, valid padding, outputs 31x158x24 	|
+| RELU					|										
+| Convolution 5x5     	| 2x2 stride, valid padding, outputs 14x77x36 	|
+|| RELU					|										
+| Convolution 5x5     	| 1x1 stride, valid padding, outputs 10x73x48 	|
+| RELU					|										
+| Convolution 3x3     	| 1x1 stride, valid padding, outputs 8x71x64 	|
+| RELU					|										
+| Convolution 3x3     	| 2x2 stride, valid padding, outputs 6x69x64 	|
+| RELU					|										
+| Convolution 5x5     	| 2x2 stride, valid padding, outputs 6x69x64 	|
+| RELU					|										
+| Flatten	      	| outputs 26496 				|
+| Fully connected	1	| outputs 100  		        									|
+| Fully connected	2	| outputs 50  		        									|
+| Fully connected	2	| outputs 1  		        									|
+|	reduce_mean					|			mse									|
+|	optimizer					|				AdamOptimizer								|
+ 
 
 
 
