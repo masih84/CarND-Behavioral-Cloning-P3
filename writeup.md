@@ -26,6 +26,9 @@ A Python code was developed on github [Full Project Repo](https://github.com/mas
 [image5]: ./sample_images/Right2.png "Recovery Image"
 [image6]: ./sample_images/Center2.png "Normal Image"
 [image7]: ./sample_images/Center-flipped.png "Flipped Image"
+[image8]: ./sample_images/1rack1.png "Track 1 Image"
+[image9]: ./sample_images/trakc_2.png "Track 2 Image"
+
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
@@ -120,7 +123,7 @@ To capture good driving behavior, I first recorded two laps on track one using c
 
 ![alt text][image2]
 
-I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... These images show what a recovery looks like starting from ... :
+I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn using more training data. I laso correct streering angle for right and left with 0.2 deg. These images show what a recovery looks like starting from Left, Center and Right :
 
 ![alt text][image3]
 ![alt text][image4]
@@ -128,23 +131,24 @@ I then recorded the vehicle recovering from the left side and right sides of the
 
 Then I repeated this process on track two in order to get more data points.
 
-To augment the data sat, I also flipped images and angles thinking that this would ... For example, here is an image that has then been flipped:
+To augment the data sat, I also flipped images and angles thinking that this would increase number of training data. For example, here is an image that has then been flipped:
 
 ![alt text][image6]
 ![alt text][image7]
 
-Etc ....
-
-After the collection process, I had X number of data points. I then preprocessed this data by ...
+After the collection process, I had 85632 number of data points. I used Generators to be able to work with this large amounts of data. Instead of storing the preprocessed data in memory all at once, using a generator I could pull pieces of the data and process them on the fly only when I need them, which is much more memory-efficient.
 
 
-I finally randomly shuffled the data set and put Y% of the data into a validation set. 
+I finally randomly shuffled the data set and put 20% of the data into a validation set. 
 
-I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was Z as evidenced by ... I used an adam optimizer so that manually training the learning rate wasn't necessary.
+I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 5 as evidenced by trail and error. I used an adam optimizer so that manually training the learning rate wasn't necessary.
 ## Result Video
 
 I used [video.py](https://github.com/masih84/CarND-Behavioral-Cloning-P3/blob/master/video.py) to generate the project video for track 1 and 2.  The [Track one](https://raw.githubusercontent.com/masih84/CarND-Behavioral-Cloning-P3/master/run2.mp4), and [Track two](https://raw.githubusercontent.com/masih84/CarND-Behavioral-Cloning-P3/master/run1.mp4) are captured car motion in Autonomous mode from the center camera. I also recorded the simulation when running one and two and post them on Youtube. [Track one YouTube Link](https://youtu.be/G8SF40JCmks) and [Track two YouTube Link](https://youtu.be/RC2NaYsrmMM)
 
+![alt text][image8]
+
+![alt text][image9]
 
 ## Discussion
 This project was a great practice and very exciting project to actually implement what we learned Deep learning for the self-driving car. The training was very important and having multiple laps for training and drive in both direction allows the network to learn how to steer in both tracks. Learning the importance of Tenseflow with GPU and using the generator to use limited memory was other handy techniques I learned in this project.
