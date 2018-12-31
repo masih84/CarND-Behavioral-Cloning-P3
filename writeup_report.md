@@ -150,8 +150,9 @@ I used this training data for training the model. The validation set helped dete
 ![alt text][image10]
 
 ## Result Video
-
-I used [video.py](https://github.com/masih84/CarND-Behavioral-Cloning-P3/blob/master/video.py) to generate the project video for track 1 and 2.  The [Track one](https://raw.githubusercontent.com/masih84/CarND-Behavioral-Cloning-P3/master/Track1.mp4), and [Track two](https://raw.githubusercontent.com/masih84/CarND-Behavioral-Cloning-P3/master/Track2.mp4) are captured car motion in Autonomous mode from the center camera. I also recorded the simulation when running one and two and post them on Youtube. [Track one YouTube Link](https://youtu.be/G8SF40JCmks) and [Track two YouTube Link](https://youtu.be/RC2NaYsrmMM)
+The trained Model is successfully driving around both track 1 and 2 without going out os the track. I increased speed and it could drive as fast as 20 MPH without any issues on both tracks. I used [video.py](https://github.com/masih84/CarND-Behavioral-Cloning-P3/blob/master/video.py) to generate the project video for both tracks. The [Track one](https://raw.githubusercontent.com/masih84/CarND-Behavioral-Cloning-P3/master/Track1.mp4), and [Track two](https://raw.githubusercontent.com/masih84/CarND-Behavioral-Cloning-P3/master/Track2.mp4) are captured car motion in Autonomous mode from the center camera. I noticed saving the image with video.py slow down my GPU/CPU and affect the car smooth motion. So, I recorded the simulation using [ezvid](https://www.ezvid.com/) and could drive as fast as 20 MPH on  both tracks. Here are Youtube Links: 
+* [YouTube Link](https://youtu.be/G8SF40JCmks) Autonomous driving results Track one
+* [YouTube Link](https://youtu.be/RC2NaYsrmMM) Autonomous driving results Track two
 
 ![alt text][image8]
 
