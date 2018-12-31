@@ -54,8 +54,7 @@ The model.py file contains the code for training and saving the convolution neur
 ### Model Architecture and Training Strategy
 
 #### 1. An appropriate model architecture has been employed
-
-I implimented the Nural Network structure used in [NVIDIA paper](http://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf) for driving actual car. This network architecture is shown in Figure 1 consists of 9 layers, including a normalization and cropping layer, 5 convolutional layers and 3 fully connected layers. The input image is normalized and cropped and passed to the network. The model includes RELU layers to introduce nonlinearity (code lines 120 to 136), and the data is normalized in the model using a Keras lambda layer (code line 113). 
+I implemented the Neural Network structure used in [NVIDIA paper](http://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf) for driving an actual car. This network architecture is shown in Figure 1 consists of 9 layers, including a normalization and cropping layer, 5 convolutional layers and 3 fully connected layers. The input image is normalized and cropped and passed to the network. The model includes RELU layers to introduce nonlinearity (code lines 120 to 136), and the data is normalized in the model using a Keras lambda layer (code line 113).
 
 ![alt text][image1]
 
